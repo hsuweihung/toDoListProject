@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://kit.fontawesome.com/a4514510d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">TODO LIST</h1>
+        <div class="newitem">
+            <input class="txt" type="text" placeholder="加入新任務！">
+            <input class="save" type="button" value="+">
+        </div>
+        <div class="subtitle">
+            <p>試著加入待辦事項吧</p>
+        </div>
+        <div class="content">
+            <ul class="filter">
+                <li><input type="button" class="all active" value="全部"></input></li>
+                <li><input type="button" class="undone" value="待完成"></input></li>
+                <li><input type="button" class="done" value="已完成"></input></li>
+            </ul>
+            <ul class="list">
+            </ul>
+            <div class="footer">
+                <p class="count_item"></p>
+                <input class="clearAll" type="button" value="清除已完成項目">
+            </div>
+        </div>
+    </div>
+    <script src="to_do_list.js"></script>
+</body>
+
+</html>
