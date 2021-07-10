@@ -93,7 +93,7 @@ h1 {
   color: #003060;
   font-weight: bold;
 }
-@media (max-width: 678px) {
+@media (max-width: 1190px) {
   h1 {
     font-style: 32px;
     line-height: 56px;
@@ -124,23 +124,26 @@ h1 {
   padding-bottom: 12px;
   margin-left: 5px;
 }
+@media (max-width: 1190px) {
+  .newitem .txt {
+    font-size: 20px;
+  }
+}
 .newitem .save {
   width: 40px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  border-radius: 10px;
-  background-color: #333333;
+  margin: 4px;
+  border-radius: 3px;
+  background-color: #3C3C3C;
   font-size: 32px;
   color: #FFFFFF;
   letter-spacing: 1.23px;
   text-align: center;
   border: none;
 }
-.newitem .save:hover {
-  background-color: gray;
+.newitem .save:active {
+  background-color: #898989;
 }
-@media (max-width: 678px) {
+@media (max-width: 1190px) {
   .newitem {
     margin: 0 12px 8px 12px;
   }
@@ -160,7 +163,7 @@ h1 {
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
-@media (max-width: 678px) {
+@media (max-width: 1190px) {
   .content {
     margin: 0 12px 0 12px;
   }
@@ -184,15 +187,19 @@ h1 {
   border-bottom: 2px solid #FFFFFF;
   cursor: pointer;
 }
-@media (max-width: 450px) {
+@media (max-width: 1190px) {
   .content .filter input {
     padding: 16px 30px;
+    font-size: 20px;
   }
 }
 .content .filter :hover {
   border-bottom: 2px solid #0000;
   color: #333333;
   font-weight: bold;
+}
+.content .filter li:hover {
+  border-bottom: 2px solid black;
 }
 
 .list {
@@ -219,6 +226,12 @@ h1 {
   min-height: 20px;
   background-color: #FFFFFF;
 }
+@media (max-width: 1190px) {
+  .list li .undo_check {
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
 .list li .done_check {
   width: 8px;
   height: 16px;
@@ -229,6 +242,12 @@ h1 {
           transform: rotate(45deg);
   margin-left: 7px;
   margin-right: 5px;
+}
+@media (max-width: 1190px) {
+  .list li .done_check {
+    min-width: 30px;
+    min-height: 30px;
+  }
 }
 .list li p {
   line-height: 24px;
@@ -286,4 +305,16 @@ h1 {
 .cancel:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+}
+@media (max-width: 1190px) {
+  .cancel {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .clearAll {
+    background-color: none;
+    font-size: 18px;
+  }
 }

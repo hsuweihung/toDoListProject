@@ -28,7 +28,7 @@ function renderData() {
     //顯示全部
     if (all.classList.length == 2) {
         data.forEach(function (item, index) {
-            let undoList = `<li><span data-num=${index} class="undo_check"></span><p>${item.content}</p><input class="cancel" type="button" data-num="${index}"  value="X"></li>`;
+            let undoList = `<li><span data-num=${index} class="undo_check"></span><p>${item.content}</p><input class="cancel" type="button" data-num="${index}" value="X"></li>`;
             let doneList = `<li><span data-num=${index} class="done_check"></span><p class="done">${item.content}</p><input class="cancel" type="button" data-num=${index} value="X"></li>`;
             if (item.status == "unfinished") {
                 str += undoList;

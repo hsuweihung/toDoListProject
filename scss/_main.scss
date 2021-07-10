@@ -28,7 +28,7 @@ h1{
     font-family: "Impact";
     color: #003060;
     font-weight: bold;
-    @media(max-width:678px) {
+    @media(max-width:1190px) {
         font-style: 32px;
         line-height: 56px;
         margin: 28px 0 14px 0;
@@ -53,25 +53,26 @@ h1{
         padding-top: 12px;
         padding-bottom: 12px;
         margin-left: 5px;
+        @media(max-width:1190px){
+            font-size: 20px;
+        }
     }
 
     .save{
         width: 40px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        margin-right: 4px;
-        border-radius: 10px;
-        background-color:#333333;
+        margin: 4px;
+        border-radius: 3px;
+        background-color:#3C3C3C;
         font-size: 32px;
         color: #FFFFFF;
         letter-spacing: 1.23px;
         text-align: center;
         border: none;
+        &:active{
+                background-color: lighten(#3C3C3C,30%);
+        }
     }
-    .save:hover{
-        background-color: lighten(#333333,30%);
-    }
-    @media(max-width:678px) {
+    @media(max-width:1190px) {
         margin: 0 12px 8px 12px;
     }
 }
@@ -88,7 +89,7 @@ h1{
     background-color: $background-color;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
-    @media(max-width:678px) {
+    @media(max-width:1190px) {
         margin:0 12px 0 12px;
     }
     
@@ -106,14 +107,20 @@ h1{
             background-color:$background-color;
             border-bottom:2px solid #FFFFFF;
             cursor: pointer;
-            @media(max-width: 450px){
+            @media(max-width: 1190px){
                 padding: 16px 30px;
+                font-size: 20px;
             }
         }
         :hover{
             border-bottom: 2px solid #0000;
             color: #333333;
             font-weight: bold;
+        }
+        li{
+            &:hover{
+                border-bottom: 2px solid black;
+            }
         }
     }
 }
@@ -134,6 +141,10 @@ h1{
             min-width: 20px;
             min-height: 20px;
             background-color: $background-color;
+            @media(max-width:1190px){
+                min-width: 30px;
+                min-height: 30px;
+            }
         }
         .done_check {
             width: 8px;
@@ -144,6 +155,10 @@ h1{
             transform: rotate(45deg);
             margin-left: 7px;
             margin-right: 5px;
+            @media(max-width:1190px){
+                min-width: 30px;
+                min-height: 30px;
+            }
         }
         p {
             line-height: 24px;
@@ -200,5 +215,15 @@ border: none;
     background-color: white;
     &:hover{
         transform:scale(1.2,1.2);
+    }
+    @media (max-width:1190px) {
+        font-size: 20px;
+    }
+}
+
+.clearAll{
+    @media (max-width:1190px) {
+        background-color: none;
+        font-size: 18px;
     }
 }
