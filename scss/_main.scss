@@ -71,11 +71,15 @@ h1{
         &:active{
                 background-color: lighten(#3C3C3C,30%);
         }
+        @media(max-width:1190px) {
+            width: 30px;
+            font-size: 30px;
+            border-radius: 3px;
+            text-align: center;
+        }
     }
     @media(max-width:1190px) {
         margin: 0 12px 8px 12px;
-        font-size: 20px;
-        text-align: center;
     }
 }
 
@@ -112,8 +116,6 @@ h1{
             @media(max-width: 1190px){
                 padding: 16px 30px;
                 font-size: 20px;
-                border:none;
-                background-color: none;
             }
         }
         :hover{
@@ -123,6 +125,8 @@ h1{
         }
         li{
             &:hover{
+                border:none;
+                background-color: none;
                 border-bottom: 2px solid black;
             }
         }
@@ -145,10 +149,6 @@ h1{
             min-width: 20px;
             min-height: 20px;
             background-color: $background-color;
-            @media(max-width:1190px){
-                min-width: 30px;
-                min-height: 30px;
-            }
         }
         .done_check {
             width: 8px;
@@ -226,6 +226,7 @@ border: none;
 .clearAll{
     @media (max-width:1190px) {
         background-color: none;
+        border: none;
         font-size: 18px;
     }
 }

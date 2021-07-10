@@ -144,10 +144,16 @@ h1 {
   background-color: #898989;
 }
 @media (max-width: 1190px) {
+  .newitem .save {
+    width: 30px;
+    font-size: 30px;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+@media (max-width: 1190px) {
   .newitem {
     margin: 0 12px 8px 12px;
-    font-size: 20px;
-    text-align: center;
   }
 }
 
@@ -193,8 +199,6 @@ h1 {
   .content .filter input {
     padding: 16px 30px;
     font-size: 20px;
-    border: none;
-    background-color: none;
   }
 }
 .content .filter :hover {
@@ -203,6 +207,8 @@ h1 {
   font-weight: bold;
 }
 .content .filter li:hover {
+  border: none;
+  background-color: none;
   border-bottom: 2px solid black;
 }
 
@@ -229,12 +235,6 @@ h1 {
   min-width: 20px;
   min-height: 20px;
   background-color: #FFFFFF;
-}
-@media (max-width: 1190px) {
-  .list li .undo_check {
-    min-width: 30px;
-    min-height: 30px;
-  }
 }
 .list li .done_check {
   width: 8px;
@@ -315,6 +315,7 @@ h1 {
 @media (max-width: 1190px) {
   .clearAll {
     background-color: none;
+    border: none;
     font-size: 18px;
   }
 }
