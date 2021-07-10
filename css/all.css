@@ -93,7 +93,7 @@ h1 {
   color: #003060;
   font-weight: bold;
 }
-@media (max-width: 1190px) {
+@media (max-width: 678px) {
   h1 {
     font-style: 32px;
     line-height: 56px;
@@ -124,34 +124,23 @@ h1 {
   padding-bottom: 12px;
   margin-left: 5px;
 }
-@media (max-width: 1190px) {
-  .newitem .txt {
-    font-size: 20px;
-  }
-}
 .newitem .save {
   width: 40px;
-  margin: 4px;
-  border-radius: 3px;
-  background-color: #3C3C3C;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  border-radius: 10px;
+  background-color: #333333;
   font-size: 32px;
   color: #FFFFFF;
   letter-spacing: 1.23px;
   text-align: center;
   border: none;
 }
-.newitem .save:active {
-  background-color: #898989;
+.newitem .save:hover {
+  background-color: gray;
 }
-@media (max-width: 1190px) {
-  .newitem .save {
-    width: 30px;
-    font-size: 30px;
-    border-radius: 3px;
-    text-align: center;
-  }
-}
-@media (max-width: 1190px) {
+@media (max-width: 678px) {
   .newitem {
     margin: 0 12px 8px 12px;
   }
@@ -171,7 +160,7 @@ h1 {
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
-@media (max-width: 1190px) {
+@media (max-width: 678px) {
   .content {
     margin: 0 12px 0 12px;
   }
@@ -195,21 +184,15 @@ h1 {
   border-bottom: 2px solid #FFFFFF;
   cursor: pointer;
 }
-@media (max-width: 1190px) {
+@media (max-width: 450px) {
   .content .filter input {
     padding: 16px 30px;
-    font-size: 20px;
   }
 }
 .content .filter :hover {
   border-bottom: 2px solid #0000;
   color: #333333;
   font-weight: bold;
-}
-.content .filter li:hover {
-  border: none;
-  background-color: none;
-  border-bottom: 2px solid black;
 }
 
 .list {
@@ -303,19 +286,4 @@ h1 {
 .cancel:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
-}
-@media (max-width: 1190px) {
-  .cancel {
-    font-size: 20px;
-    border: none;
-    background-color: none;
-  }
-}
-
-@media (max-width: 1190px) {
-  .clearAll {
-    background-color: none;
-    border: none;
-    font-size: 18px;
-  }
 }
