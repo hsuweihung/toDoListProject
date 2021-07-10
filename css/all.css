@@ -124,6 +124,11 @@ h1 {
   padding-bottom: 12px;
   margin-left: 5px;
 }
+@media (max-width: 1190px) {
+  .newitem .txt {
+    font-size: 20px;
+  }
+}
 .newitem .save {
   width: 40px;
   margin-top: 4px;
